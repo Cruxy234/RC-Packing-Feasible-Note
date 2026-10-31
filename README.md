@@ -2,6 +2,9 @@
 
 **Share this link:** https://github.com/Cruxy234/RC-Packing-Feasible-Note
 
+**Attribution:** [`AI_RIGHTS_AND_ATTRIBUTION.md`](AI_RIGHTS_AND_ATTRIBUTION.md)  
+Christopher Gardner is the sole human research director. AI tools claim nothing.
+
 **Final version:** [`paper/FINAL.md`](paper/FINAL.md)
 
 **Breakthrough readiness:** [`BREAKTHROUGH_READINESS.md`](BREAKTHROUGH_READINESS.md)
@@ -22,7 +25,8 @@
 
 | File | Content |
 |------|---------|
-| `BREAKTHROUGH_READINESS.md` | What is done, what remains external, submission checklist |
+| `AI_RIGHTS_AND_ATTRIBUTION.md` | Human research director; AI tools claim nothing |
+| `BREAKTHROUGH_READINESS.md` | What is done, what remains external |
 | `STATUS.md` | Current precise status |
 | `theory/HARDER_PUSH_2.md` | Careful sharpness search |
 | `theory/VERIFICATION_2026-10-31.md` | Latest verification |
@@ -38,4 +42,4 @@ Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label comple
 \qquad
 \gamma_F \ge \delta.
 \]
-The result is internally complete as a theorem candidate and ready for external scrutiny. A scientific breakthrough requires independent specialist reconstruction, peer review, and community recognition — steps that remain external.
+The result is internally complete as a theorem candidate and ready for external scrutiny. Christopher Gardner is the sole human research director. AI tools claim nothing.
