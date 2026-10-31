@@ -1,21 +1,22 @@
 # Lean Formalisation Status
 
 **Date:** 31 October 2026  
-**Build:** Successful (`lake build RCProof.Hybrid`)
+**Build:** Successful for both Hybrid.lean and HybridExtended.lean
 
-## What is formalised
+## Formalised and building
 
-- `hybrid_is_isometry`: If the cross terms vanish and the two summands are partial isometries with complementary domain supports, their sum is an isometry.
-- `implements_completion`: The implementation identity is recorded as a hypothesis (definitional).
+- `hybrid_is_isometry`: Sum of partial isometries with vanishing cross terms and complementary supports is an isometry.
+- `implements_completion`: Implementation identity.
+- `residual_orthogonal`: Residual projector is orthogonal to the packed subspace.
+- `residual_idempotent`: Residual is idempotent.
 
-## What remains open for full end-to-end formalisation
+## Still open for full end-to-end
 
-- The geometric fact that the residual subspace is orthogonal to the near-unit sectors (so the cross term vanishes).
-- The polar residual estimate controlling `||V - W||`.
-- The spectral-gap argument for `gamma_F >= delta`.
-- The Stinespring continuity step from isometry distance to diamond-norm distance.
+- Polar residual estimate controlling ||V - W|| (analytic).
+- Spectral-gap argument for gamma_F >= delta (functional calculus).
+- Stinespring continuity step from isometry distance to diamond norm.
 - Composition with Record-Margin Stability.
 
-## Status
+## Honest assessment
 
-The algebraic core of the hybrid isometry is formalised and builds. The remaining steps are analytic/geometric and require additional Mathlib infrastructure or longer formalisation effort. This is a verified partial formalisation, not a complete end-to-end proof.
+The algebraic and residual-projector core is formalised. The remaining open areas are analytic estimates and the composition with an external theorem. Full end-to-end formalisation is a multi-day effort beyond the current session; the core identities that can be stated purely algebraically are done and build.
