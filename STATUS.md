@@ -33,12 +33,14 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 | Sharpness | Careful search with valid POVMs: ratios 0.18–0.47; coefficient 2 has clear slack |
 | Prior art | Two-pass search; no match for the combined statement |
 | Lean | Algebraic core and residual orthogonality build |
+| Critical examination | Structural claims solid; quantitative bound is a safe majorant with slack (`theory/CRITICAL_EXAMINATION.md`) |
 
 ## Remaining open items
 
 | Item | Nature |
 |------|--------|
 | Independent external specialist reconstruction of the hybrid distance bound | External |
+| Explicit separation of polar and spectral contributions in the distance estimate | Analytic tightening |
 | Peer review | External |
 | Definitive novelty confirmation | External |
 | Full end-to-end Lean formalisation of analytic estimates | Open formalisation |
@@ -46,12 +48,12 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 
 ## Primary documents
 
-- `AI_RIGHTS_AND_ATTRIBUTION.md` — attribution and non-claim notice
-- `paper/FINAL.md` — clean final version
-- `theory/HARDER_PUSH_2.md` — careful sharpness search
-- `theory/full_proof.md` — complete write-up
-- `lean/RCProof/Hybrid.lean`, `HybridExtended.lean` — formalised core
+- `AI_RIGHTS_AND_ATTRIBUTION.md`
+- `theory/CRITICAL_EXAMINATION.md` — specialist audit of claimed solutions
+- `paper/FINAL.md`
+- `theory/full_proof.md`
+- `lean/RCProof/Hybrid.lean`, `HybridExtended.lean`
 
 ## Credibility gate
 
-The result is internally reconstructed, computationally audited, and partially formalised. Coefficient 2 is a safe majorant with observed slack. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the principal credibility gate. Christopher Gardner is the sole human research director.
+The structural claims are solid. The quantitative distance bound is a safe majorant whose derivation contains slack. Independent external reconstruction of the hybrid distance estimate with explicit constants remains the principal credibility gate. Christopher Gardner is the sole human research director.
