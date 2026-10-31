@@ -1,38 +1,46 @@
-# RC Packing-Feasible Note & Measurement Quality Certificate
+# Packing Condition for Approximate Quantum Measurements
 
-Theory, formalisation, and manuscript draft toward a packing condition for approximate quantum measurements.
+**Public entry point for the full research package from the RC packing-feasible work.**
 
-**Repository:** https://github.com/Cruxy234/RC-Packing-Feasible-Note  
-**Related:** [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
+**Share this link:** https://github.com/Cruxy234/RC-Packing-Feasible-Note
 
-## Headline
+Related upstream programme: [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
 
-A positive lower bound on $\sigma_{\min}(T)$ (synthesis operator of near-unit POVM sectors) is necessary and sufficient (up to constants) for quantitative rounding to a repeatable measurement. Sharp geometric constant $C_{\mathrm{proj}}=1$ (Lean-checked). Dimension-free Measurement Quality Certificate (MQC) from $(\eta,\kappa,\alpha,\delta)$.
+---
 
-## Layout
+## Start here
 
-| Path | Content |
-|------|---------|
-| `paper/arxiv_draft.md` | **Manuscript draft** (abstract through references) |
-| `paper/end_to_end_demo.md` | Synthetic detector MQC demonstration |
-| `theory/` | Packing theorem, MQC notes, items 1–7 status |
-| `lean/RCProof/Core.lean` | Lean 4 + Mathlib proofs (zero sorry) |
+| Priority | File | What it is |
+|----------|------|------------|
+| **1** | [`paper/arxiv_ready.md`](paper/arxiv_ready.md) | Submission-ready short paper (author line, theorems, MQC) |
+| **2** | [`REVIEW_REQUEST.md`](REVIEW_REQUEST.md) | External review checklist for Theorems 1–3 |
+| **3** | [`lean/RCProof/Core.lean`](lean/RCProof/Core.lean) | Lean 4 + Mathlib proofs (zero `sorry`) |
 
-## What is done
+## Full contents
 
-- Packing condition + constructive polar rounding (rank-1 and higher-rank)
-- Sharp $C_{\mathrm{proj}}=1$, working global $C=6$, conservative $C=8$
-- MQC statement, estimation sketches, FT-style illustration
-- Lean formalisation of the real-arithmetic core
-- arXiv-style manuscript draft
+### Paper
+- `paper/arxiv_ready.md` — main manuscript
+- `paper/arxiv_draft.md` — earlier draft
+- `paper/end_to_end_demo.md` — synthetic detector MQC numbers
 
-## What is not done (breakthrough gates)
+### Theory
+- `theory/packing_feasible_moving_povm.md` — packing condition + rank-1/higher-rank
+- `theory/measurement_quality_certificate.md` — MQC draft
+- `theory/MQC_complete_status.md` — items 1–4 (sharp constant, estimation, FT illustration, audit)
+- `theory/items_5_7_complete.md` — items 5–7 (global C, higher-rank bounds, Lean obligations)
 
-- Peer review / independent human verification
-- Actual arXiv upload under an author’s account
-- Laboratory or full circuit-level case study
-- Community adoption / citations
+### Lean
+- `lean/RCProof/Core.lean` — `projector_const_one`, `polar_residual_le`, `near_orthonormal_overlap`, `rank1_core_package`
+- `lean/README.md` — how to reproduce the build
 
-## Honest status
+## Headline result
 
-This is a **complete intermediate research package** resolving the RC packing-feasible open problem with formalised algebraic core and a paper-ready write-up. It is **not** yet a field-level breakthrough: that requires external validation and use.
+A positive lower bound on $\sigma_{\min}(T)$ (synthesis operator of near-unit POVM sectors) is necessary and sufficient (up to constants) for quantitative rounding to a repeatable measurement.
+
+- Sharp geometric constant: $C_{\mathrm{proj}} = 1$
+- MQC: $\|\Phi-\Pi\|_\diamond \le C(\delta + (1-\alpha) + \sqrt{\eta/(\kappa\alpha)})$ with working $C=6$, conservative $C=8$
+- Algebraic core machine-checked in Lean 4
+
+## Status
+
+Public intermediate research package. Not peer-reviewed. Ready for external audit and arXiv submission by the author.
