@@ -28,32 +28,32 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 | Same-label completion | \(F_j = Q_j + R E_j R\); \(\gamma_F \ge \delta\) |
 | Hybrid isometry identities | \(V^*V = I\), \(V^*\Lambda_j V = F_j\) to machine precision (\(\sim 10^{-15}\)) |
 | Dimension-free bound | Coefficient-two majorant; SDP audits consistent |
+| Separated distance | Polar residual < \(\sqrt{1-\alpha^2}\); spectral contribution ~ \(\sqrt{\delta}\); total below the sum (`theory/SEPARATED_DISTANCE.md`) |
 | Higher-rank uniformity | Same hybrid argument; no rank-dependent factor |
-| Robustness | Lipschitz in estimation error (explicit constants via spectral gap) |
-| Sharpness | Careful search with valid POVMs: ratios 0.18–0.47; coefficient 2 has clear slack |
-| Prior art | Two-pass search; no match for the combined statement |
+| Robustness | Lipschitz in estimation error |
+| Sharpness | Careful search: ratios 0.18–0.47 |
+| Critical examination | Structural claims solid; quantitative bound is a safe majorant with slack |
 | Lean | Algebraic core and residual orthogonality build |
-| Critical examination | Structural claims solid; quantitative bound is a safe majorant with slack (`theory/CRITICAL_EXAMINATION.md`) |
 
 ## Remaining open items
 
 | Item | Nature |
 |------|--------|
 | Independent external specialist reconstruction of the hybrid distance bound | External |
-| Explicit separation of polar and spectral contributions in the distance estimate | Analytic tightening |
+| Fully rigorous tracking of constants in the separated estimate | Analytic |
 | Peer review | External |
 | Definitive novelty confirmation | External |
-| Full end-to-end Lean formalisation of analytic estimates | Open formalisation |
-| Optimal constant (coefficient 2 is safe with slack) | Concrete open problem |
+| Full end-to-end Lean formalisation | Open formalisation |
+| Optimal constant | Concrete open problem; coefficient 2 is safe |
 
 ## Primary documents
 
 - `AI_RIGHTS_AND_ATTRIBUTION.md`
-- `theory/CRITICAL_EXAMINATION.md` — specialist audit of claimed solutions
+- `theory/SEPARATED_DISTANCE.md` — polar/spectral separation
+- `theory/CRITICAL_EXAMINATION.md`
 - `paper/FINAL.md`
-- `theory/full_proof.md`
 - `lean/RCProof/Hybrid.lean`, `HybridExtended.lean`
 
 ## Credibility gate
 
-The structural claims are solid. The quantitative distance bound is a safe majorant whose derivation contains slack. Independent external reconstruction of the hybrid distance estimate with explicit constants remains the principal credibility gate. Christopher Gardner is the sole human research director.
+The structural claims are solid. The quantitative distance bound is a safe majorant; a separated estimate suggests a tighter coefficient is available. Independent external reconstruction remains the principal credibility gate. Christopher Gardner is the sole human research director.
