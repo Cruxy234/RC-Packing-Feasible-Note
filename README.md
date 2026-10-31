@@ -7,20 +7,23 @@ Contribution toward the open packing-feasible moving-POVM problem in [christophe
 | File | Description |
 |------|-------------|
 | `theory/packing_feasible_moving_povm.md` | Packing condition, rank-1 theorem, higher-rank extension, literature differentiation |
-| `theory/measurement_quality_certificate.md` | Earlier MQC draft (constants, estimation sketch, FT/foundations corollaries) |
-| `theory/MQC_complete_status.md` | **Complete status on items 1–4**: sharp analytic $C_{\mathrm{proj}}=1$, sample-complexity protocols, surface-code-style numerical illustration, verification audit |
+| `theory/measurement_quality_certificate.md` | MQC draft (estimation sketch, FT/foundations corollaries) |
+| `theory/MQC_complete_status.md` | Items 1–4: sharp $C_{\mathrm{proj}}=1$, sample complexity, surface-code illustration, verification audit |
+| `theory/items_5_7_complete.md` | **Items 5–7:** global diamond constant, higher-rank analytic bounds, paper-ready abstract + Lean core |
 
 ## Headline results
 
-1. **Packing condition.** $\sigma_{\min}(T)>0$ (synthesis operator of near-unit sectors) is necessary and sufficient (up to constants) for quantitative rounding of a POVM to a nearby repeatable measurement.
-2. **Sharp constant.** $\max_j\|E_j-F_j\|_\infty \le \delta+(1-\alpha)$ (analytic, phase-aligned polar factor).
-3. **MQC.** Dimension-free diamond-norm certificate from $(\eta,\kappa,\alpha,\delta)$.
-4. **FT illustration.** Against a ~1% surface-code-style threshold, the certificate is informative: only ultra-high packing quality yields $\varepsilon$ comparable to the threshold gap; poor packing is rejected.
+1. **Packing condition.** $\sigma_{\min}(T)>0$ is necessary and sufficient (up to constants) for quantitative rounding to a repeatable measurement.
+2. **Sharp geometric constant.** $\max_j\|E_j-F_j\|_\infty \le \delta+(1-\alpha)$ for both rank-1 and higher rank.
+3. **MQC.** $\|\Phi-\Pi\|_\diamond\le C(\delta+(1-\alpha)+\sqrt{\eta/(\kappa\alpha)})$ with working $C=6$, conservative $C=8$.
+4. **FT illustration.** Certificate is informative against a ~1% threshold gap; poor packing is rejected.
+5. **Higher rank.** Same $1-\alpha$ bound lifts via polar factor of the synthesis matrix.
+6. **Lean obligations.** Core linear-algebra statements isolated for Mathlib formalisation.
 
 ## Verification status
 
-Self-audited geometric core; external peer review and full Lean formalisation still required.
+Self-audited geometric core and constants; external peer review and full Lean proofs still required.
 
 ## Note on repository location
 
-This repository is under Cruxy234 because the GitHub integration used for the work does not have write access to `christophergardner-star/RC-Discovery`. The notes can be copied or submitted as a PR once access is available.
+Under Cruxy234 because the GitHub integration lacks write access to `christophergardner-star/RC-Discovery`. Copy or PR when access is available.
