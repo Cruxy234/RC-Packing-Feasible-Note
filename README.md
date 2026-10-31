@@ -4,28 +4,30 @@
 
 Related upstream: [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
 
-## Definitive conclusion
+## Short paper
 
-**[`theory/DEFINITIVE_CONCLUSION.md`](theory/DEFINITIVE_CONCLUSION.md)**  — Dimension-free chain via Naimark completion + residual-to-extra-outcome (\(\gamma_F = 1\)). Internally closed theorem candidate; independent audit of the Naimark step required.
+**[`paper/short_paper.md`](paper/short_paper.md)** — Packing-conditioned same-label dimension-free theorem. Draft for external attack.
 
-## Key supporting files
+## Supporting notes (in order of development)
 
 | File | Content |
 |------|---------|
-| `theory/nu_dimension_free_attack.md` | Earlier attack on the \(m\)-dependence of \(\nu\) |
-| `theory/gamma_F_closure_path.md` | Residual-to-extra-outcome argument for \(\gamma_F = 1\) |
-| `theory/packing_feasible_moving_povm.md` | Synthesis packing condition and polar rounding |
-| `lean/RCProof/Core.lean` | Lean 4 core of the sharp geometric constant (zero `sorry`) |
-| `paper/arxiv_ready.md` | Manuscript draft |
+| `theory/PRIOR_ART_VETO.md` | Literature search: combined statement not found |
+| `theory/adversarial_theorem_audit.md` | Extreme-case probes; bound holds |
+| `theory/diamond_norm_computation.md` | Pure-state diamond proxies |
+| `theory/constant_tightening.md` | Empirical constant ~2; rates consistent |
+| `theory/hybrid_isometry_verification.md` | Machine-precision check of hybrid isometry |
+| `theory/same_label_nu_attack.md` | Analytic attack on same-label ν |
+| `theory/residual_spectral_radius.md` | Identification of residual invariant (later resolved) |
+| `theory/correct_WU_J_relation.md` | Corrected overlap matrix elements |
+| `lean/RCProof/Core.lean` | Lean core of geometric constant |
 
 ## Headline
 
-Under a positive packing condition \(\alpha = \sigma_{\min}(T) > 0\) on the near-unit sectors of a POVM, there exists an explicit Naimark completion (with residual routed to one extra outcome) such that the measurement-channel distance is dimension-free,
-
+Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label completion \(F_j = Q_j + R E_j R\) admits a hybrid Stinespring isometry such that
 \[
-\nu = O\big(\sqrt{1-\alpha^2} + \sqrt{\delta}\big),
+\nu \le 4\big(\sqrt{1-\alpha^2} + \sqrt{\delta}\big),
+\qquad
+\gamma_F \ge \delta.
 \]
-
-and the completed effects are exact projectors (\(\gamma_F = 1\)). Composition with the Record-Margin Stability theorem then yields a fully dimension-free diamond-norm certificate of closeness to an exactly idempotent record process.
-
-Independent audit of the Naimark isometry construction is the remaining credibility gate.
+Composition with Record-Margin Stability yields a fully dimension-free certificate. Prior-art search found no exact match for the combined statement. Independent audit of the hybrid isometry remains the credibility gate.
