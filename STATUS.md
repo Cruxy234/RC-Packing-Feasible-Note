@@ -25,14 +25,14 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 - Full proof write-up (`theory/full_proof.md`) with verification note.
 - Numerical probes, adversarial audits, and pure-state diamond proxies consistent with the bound; empirical constant closer to 2.
 - Prior-art search (two passes) found no match for the combined statement or the hybrid construction.
-- Lean sketch of the algebraic identities prepared (`lean/RCProof/Hybrid.lean`).
+- **Lean algebraic core formalised and builds** (`lean/RCProof/Hybrid.lean`): the isometry identity under vanishing cross terms and complementary supports.
 - Review package and novelty statement prepared for external specialists.
 
-## Remaining external gates
+## Remaining external / open items
 
 | Item | Status |
 |------|--------|
-| Full Lean formalisation of the end-to-end theorem | Sketch only; full formalisation open |
+| Full Lean formalisation of the end-to-end theorem | Algebraic core done and builds; geometric/analytic steps open |
 | Independent external specialist proof review | Package ready (`REVIEW_PACKAGE.md`); not yet sent |
 | Peer review | Not yet submitted |
 | Definitive novelty confirmation | Literature search complete; external confirmation pending |
@@ -41,10 +41,12 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 
 - `theory/full_proof.md` — full proof
 - `theory/full_proof_verification.md` — machine-precision verification
+- `lean/RCProof/Hybrid.lean` — formalised algebraic core (builds)
+- `lean/LEAN_STATUS.md` — Lean status
 - `REVIEW_PACKAGE.md` — package for external specialists
-- `NOVELTY_STATEMENT.md` — novelty claim and search scope
+- `NOVELTY_STATEMENT.md` — novelty claim
 - `paper/long_paper.md` / `paper/short_paper.md`
 
 ## Credibility gate
 
-The result is a coherent theorem candidate with verified identities and low prior-art risk. Its final credibility rests on independent external reconstruction of the hybrid distance bound.
+The result is a coherent theorem candidate with verified identities, a formalised algebraic core, and low prior-art risk. Its final credibility rests on independent external reconstruction of the hybrid distance bound.
