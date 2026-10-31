@@ -4,9 +4,10 @@
 
 Related upstream: [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
 
-## Short paper
+## Papers
 
-**[`paper/short_paper.md`](paper/short_paper.md)** — Packing-conditioned same-label dimension-free theorem. Draft for external attack.
+- **[`paper/long_paper.md`](paper/long_paper.md)** — Extended paper with full development, numerical evidence, prior-art discussion, and limitations.
+- **[`paper/short_paper.md`](paper/short_paper.md)** — Concise version for external attack.
 
 ## Supporting notes (in order of development)
 
