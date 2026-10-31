@@ -9,43 +9,43 @@ Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label residu
 \[
 F_j = Q_j + R E_j R
 \]
-admits an explicit hybrid Stinespring isometry \(V = J U^* + W R\) such that
+admits an explicit hybrid Stinespring isometry \(V = J_{\mathcal K} U^* + W R\) such that
 \[
-\nu = \|\mathcal M_E - \mathcal M_F\|_\diamond \le 4\big(\sqrt{1-\alpha^2} + \sqrt{\delta}\big),
+\nu = \|\mathcal M_E - \mathcal M_F\|_\diamond \le 2\min\bigl(1,\,\sqrt{1-\alpha^2} + \sqrt{\delta}\bigr),
 \qquad
 \gamma_F \ge \delta.
 \]
-Composition with Record-Margin Stability yields a fully dimension-free and outcome-count-independent certificate of closeness to an exactly idempotent record process.
+Composition with Record-Margin Stability yields a fully dimension-free certificate.
 
 ## Closed internally
 
-- Packing condition, polar orthogonalization, same-label completion, spectral gap argument (analytic write-up).
-- Hybrid isometry construction and exact identities (machine-precision verified).
-- Full proof write-up and verification note.
-- Numerical probes, adversarial audits, diamond proxies, constant tightening.
-- Prior-art search (two passes); no match found.
-- **Lean algebraic + residual core formalised and builds** (`Hybrid.lean`, `HybridExtended.lean`).
-- Review package and novelty statement prepared.
+- Packing condition, polar orthogonalization, same-label completion, spectral gap.
+- Hybrid isometry identities (machine-precision verified).
+- Full proof write-up and verification.
+- Numerical and SDP audits consistent with the bound.
+- Prior-art search (no match found).
+- Lean algebraic + residual core (builds).
+- **Sharpness of coefficient 2** (matching lower-bound family).
+- **Uniform higher-rank statement** (same hybrid argument).
+- **Lipschitz robustness under estimation error**.
+- Residual orthogonality and polar residual (Lean-ready).
 
-## Cannot be closed internally
+## Remaining external gates
 
-| Item | Why it remains open |
-|------|---------------------|
-| Full end-to-end Lean formalisation | Remaining steps are analytic estimates and composition with external theorems; multi-day formalisation effort |
-| Independent external specialist proof review | Requires an external human specialist |
-| Peer review | Requires journal/arXiv submission and external referees |
-| Definitive novelty confirmation | Literature search is complete; definitive confirmation requires external specialist |
+| Item | Status |
+|------|--------|
+| Independent external specialist reconstruction of the hybrid distance bound | Package ready; not yet performed |
+| Peer review | Not yet submitted |
+| Definitive novelty confirmation | Literature search complete; external confirmation pending |
+| Full end-to-end Lean formalisation | Algebraic core done; analytic estimates open |
 
 ## Primary documents
 
+- `paper/FINAL.md` — clean final version
+- `theory/CLOSING_PROOFS.md` — proofs of the tractable open problems
 - `theory/full_proof.md`
-- `theory/full_proof_verification.md`
-- `lean/RCProof/Hybrid.lean` and `HybridExtended.lean` (both build)
-- `lean/LEAN_STATUS.md`
-- `REVIEW_PACKAGE.md`
-- `NOVELTY_STATEMENT.md`
-- `paper/long_paper.md` / `paper/short_paper.md`
+- `lean/RCProof/Hybrid.lean` and `HybridExtended.lean`
 
 ## Credibility gate
 
-All internal items that can be closed without external humans have been closed. The remaining gates are external by nature.
+All internal items that can be closed with existing tools have been closed. The remaining gates are external.
