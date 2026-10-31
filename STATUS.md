@@ -4,6 +4,8 @@
 **Repo:** https://github.com/Cruxy234/RC-Packing-Feasible-Note  
 **Canonical upstream:** https://github.com/christophergardner-star/RC-Discovery
 
+**Attribution:** Christopher Gardner is the sole human research director. AI tools claim nothing. See `AI_RIGHTS_AND_ATTRIBUTION.md`.
+
 ## Headline result
 
 Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label residual completion
@@ -44,13 +46,12 @@ Composition with Record-Margin Stability yields a fully dimension-free and outco
 
 ## Primary documents
 
+- `AI_RIGHTS_AND_ATTRIBUTION.md` — attribution and non-claim notice
 - `paper/FINAL.md` — clean final version
 - `theory/HARDER_PUSH_2.md` — careful sharpness search
-- `theory/HARDER_PUSH.md` — explicit probes and robustness constants
-- `theory/CLOSING_PROOFS.md` — analytic arguments for tractable problems
 - `theory/full_proof.md` — complete write-up
 - `lean/RCProof/Hybrid.lean`, `HybridExtended.lean` — formalised core
 
 ## Credibility gate
 
-The result is internally reconstructed, computationally audited, and partially formalised. Coefficient 2 is a safe majorant with observed slack. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the principal credibility gate.
+The result is internally reconstructed, computationally audited, and partially formalised. Coefficient 2 is a safe majorant with observed slack. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the principal credibility gate. Christopher Gardner is the sole human research director.
