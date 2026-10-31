@@ -1,41 +1,36 @@
-# Packing Condition for Approximate Quantum Measurements
+# Packing-Conditioned Same-Label Rounding
 
 **Share this link:** https://github.com/Cruxy234/RC-Packing-Feasible-Note
 
-**Current status:** [`STATUS.md`](STATUS.md)
+**Final version:** [`paper/FINAL.md`](paper/FINAL.md)
 
-Related upstream: [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
+**Canonical repository:** [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
+
+**Current status:** [`STATUS.md`](STATUS.md)
 
 ## Papers
 
-- **[`paper/long_paper.md`](paper/long_paper.md)** — Extended paper.
+- **[`paper/FINAL.md`](paper/FINAL.md)** — Clean final version aligned with the validated coefficient-two bound.
+- **[`paper/long_paper.md`](paper/long_paper.md)** — Extended development.
 - **[`paper/short_paper.md`](paper/short_paper.md)** — Concise version.
-- **[`theory/full_proof.md`](theory/full_proof.md)** — Full proof.
-- **[`theory/full_proof_verification.md`](theory/full_proof_verification.md)** — Machine-precision verification.
+- **[`theory/full_proof.md`](theory/full_proof.md)** — Full proof write-up.
 
-## External review packages
-
-- **[`REVIEW_PACKAGE.md`](REVIEW_PACKAGE.md)** — Ready to send to a specialist.
-- **[`NOVELTY_STATEMENT.md`](NOVELTY_STATEMENT.md)** — Novelty claim and search scope.
-
-## Supporting notes
+## Supporting materials
 
 | File | Content |
 |------|---------|
 | `STATUS.md` | Current status |
-| `lean/RCProof/Hybrid.lean` | Lean sketch of algebraic identities |
-| `theory/PRIOR_ART_VETO_UPDATED.md` | Deeper literature search |
-| `theory/hybrid_stinespring_isometry.md` | Construction details |
-| `theory/adversarial_theorem_audit.md` | Extreme-case probes |
-| `theory/diamond_norm_computation.md` | Pure-state diamond proxies |
-| `theory/constant_tightening.md` | Empirical constant |
+| `lean/RCProof/Hybrid.lean` | Formalised algebraic core (builds) |
+| `theory/RECHECK_2026-10-31.md` | Fresh machine-precision recheck |
+| `REVIEW_PACKAGE.md` | Package for external specialists |
+| `NOVELTY_STATEMENT.md` | Novelty claim and search scope |
 
 ## Headline
 
 Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label completion admits a hybrid Stinespring isometry such that
 \[
-\nu \le 4\big(\sqrt{1-\alpha^2} + \sqrt{\delta}\big),
+\nu \le 2\min\bigl(1,\,\sqrt{1-\alpha^2} + \sqrt{\delta}\bigr),
 \qquad
 \gamma_F \ge \delta.
 \]
-The result is a verified theorem candidate with low prior-art risk. Independent external reconstruction of the hybrid distance bound is the remaining credibility gate.
+The result is internally reconstructed, computationally audited, and partially formalised. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the credibility gate.
