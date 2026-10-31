@@ -13,8 +13,9 @@ Related upstream: [christophergardner-star/RC-Discovery](https://github.com/chri
 
 | File | Content |
 |------|---------|
+| `theory/PRIOR_ART_VETO_UPDATED.md` | Deeper literature search: no match for hybrid same-label theorem |
 | `theory/hybrid_stinespring_isometry.md` | Hybrid isometry construction and key identities |
-| `theory/PRIOR_ART_VETO.md` | Literature search: combined statement not found |
+| `theory/PRIOR_ART_VETO.md` | Initial literature search |
 | `theory/adversarial_theorem_audit.md` | Extreme-case probes; bound holds |
 | `theory/diamond_norm_computation.md` | Pure-state diamond proxies |
 | `theory/constant_tightening.md` | Empirical constant ~2; rates consistent |
