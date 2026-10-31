@@ -1,7 +1,8 @@
 # Current Status
 
 **Date:** 31 October 2026  
-**Repo:** https://github.com/Cruxy234/RC-Packing-Feasible-Note
+**Repo:** https://github.com/Cruxy234/RC-Packing-Feasible-Note  
+**Canonical upstream:** https://github.com/christophergardner-star/RC-Discovery
 
 ## Headline result
 
@@ -15,39 +16,41 @@ admits an explicit hybrid Stinespring isometry \(V = J_{\mathcal K} U^* + W R\) 
 \qquad
 \gamma_F \ge \delta.
 \]
-Composition with Record-Margin Stability yields a fully dimension-free certificate.
+Composition with Record-Margin Stability yields a fully dimension-free and outcome-count-independent certificate of closeness to an exactly idempotent record process.
 
-## Closed internally
+## What is established
 
-- Packing condition, polar orthogonalization, same-label completion, spectral gap.
-- Hybrid isometry identities (machine-precision verified).
-- Full proof write-up and verification.
-- Numerical and SDP audits consistent with the bound.
-- Prior-art search (no match found).
-- Lean algebraic + residual core (builds).
-- Uniform higher-rank statement.
-- Lipschitz robustness with explicit constants.
-- Sharpness: careful search with valid POVMs yields ratios 0.18–0.47; coefficient 2 has clear slack. Optimal constant remains open but does not block the result.
+| Item | Evidence |
+|------|----------|
+| Packing condition \(\alpha > 0\) | Necessary and sufficient for simultaneous polar orthogonalization |
+| Same-label completion | \(F_j = Q_j + R E_j R\); \(\gamma_F \ge \delta\) |
+| Hybrid isometry identities | \(V^*V = I\), \(V^*\Lambda_j V = F_j\) to machine precision (\(\sim 10^{-15}\)) |
+| Dimension-free bound | Coefficient-two majorant; SDP audits consistent |
+| Higher-rank uniformity | Same hybrid argument; no rank-dependent factor |
+| Robustness | Lipschitz in estimation error (explicit constants via spectral gap) |
+| Sharpness | Careful search with valid POVMs: ratios 0.18–0.47; coefficient 2 has clear slack |
+| Prior art | Two-pass search; no match for the combined statement |
+| Lean | Algebraic core and residual orthogonality build |
 
-## Remaining external gates
+## Remaining open items
 
-| Item | Status |
+| Item | Nature |
 |------|--------|
-| Independent external specialist reconstruction of the hybrid distance bound | Package ready; not yet performed |
-| Peer review | Not yet submitted |
-| Definitive novelty confirmation | Literature search complete; external confirmation pending |
-| Full end-to-end Lean formalisation | Algebraic core done; analytic estimates open |
-| Optimal constant | Concrete open problem; coefficient 2 is safe with slack |
+| Independent external specialist reconstruction of the hybrid distance bound | External |
+| Peer review | External |
+| Definitive novelty confirmation | External |
+| Full end-to-end Lean formalisation of analytic estimates | Open formalisation |
+| Optimal constant (coefficient 2 is safe with slack) | Concrete open problem |
 
 ## Primary documents
 
-- `paper/FINAL.md`
+- `paper/FINAL.md` — clean final version
 - `theory/HARDER_PUSH_2.md` — careful sharpness search
-- `theory/HARDER_PUSH.md`
-- `theory/CLOSING_PROOFS.md`
-- `theory/full_proof.md`
-- `lean/RCProof/Hybrid.lean` and `HybridExtended.lean`
+- `theory/HARDER_PUSH.md` — explicit probes and robustness constants
+- `theory/CLOSING_PROOFS.md` — analytic arguments for tractable problems
+- `theory/full_proof.md` — complete write-up
+- `lean/RCProof/Hybrid.lean`, `HybridExtended.lean` — formalised core
 
 ## Credibility gate
 
-Coefficient 2 is a safe majorant with observed slack. All internal items that can be closed with existing tools have been closed or reduced to concrete open problems. The remaining gates are external.
+The result is internally reconstructed, computationally audited, and partially formalised. Coefficient 2 is a safe majorant with observed slack. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the principal credibility gate.
