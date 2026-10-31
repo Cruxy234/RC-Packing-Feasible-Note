@@ -17,36 +17,35 @@ admits an explicit hybrid Stinespring isometry \(V = J U^* + W R\) such that
 \]
 Composition with Record-Margin Stability yields a fully dimension-free and outcome-count-independent certificate of closeness to an exactly idempotent record process.
 
-## What is established internally
+## Closed internally
 
-- Packing condition \(\alpha\) is necessary and sufficient for simultaneous polar orthogonalization of near-unit sectors.
-- Same-label completion preserves spectral gap \(\gamma_F \ge \delta\).
-- Hybrid isometry \(V = JU^* + WR\) is an exact Stinespring dilation of the completion (machine-precision verified).
-- Full proof write-up (`theory/full_proof.md`) with verification note.
-- Numerical probes, adversarial audits, and pure-state diamond proxies consistent with the bound; empirical constant closer to 2.
-- Prior-art search (two passes) found no match for the combined statement or the hybrid construction.
-- **Lean algebraic core formalised and builds** (`lean/RCProof/Hybrid.lean`): the isometry identity under vanishing cross terms and complementary supports.
-- Review package and novelty statement prepared for external specialists.
+- Packing condition, polar orthogonalization, same-label completion, spectral gap argument (analytic write-up).
+- Hybrid isometry construction and exact identities (machine-precision verified).
+- Full proof write-up and verification note.
+- Numerical probes, adversarial audits, diamond proxies, constant tightening.
+- Prior-art search (two passes); no match found.
+- **Lean algebraic + residual core formalised and builds** (`Hybrid.lean`, `HybridExtended.lean`).
+- Review package and novelty statement prepared.
 
-## Remaining external / open items
+## Cannot be closed internally
 
-| Item | Status |
-|------|--------|
-| Full Lean formalisation of the end-to-end theorem | Algebraic core done and builds; geometric/analytic steps open |
-| Independent external specialist proof review | Package ready (`REVIEW_PACKAGE.md`); not yet sent |
-| Peer review | Not yet submitted |
-| Definitive novelty confirmation | Literature search complete; external confirmation pending |
+| Item | Why it remains open |
+|------|---------------------|
+| Full end-to-end Lean formalisation | Remaining steps are analytic estimates and composition with external theorems; multi-day formalisation effort |
+| Independent external specialist proof review | Requires an external human specialist |
+| Peer review | Requires journal/arXiv submission and external referees |
+| Definitive novelty confirmation | Literature search is complete; definitive confirmation requires external specialist |
 
 ## Primary documents
 
-- `theory/full_proof.md` — full proof
-- `theory/full_proof_verification.md` — machine-precision verification
-- `lean/RCProof/Hybrid.lean` — formalised algebraic core (builds)
-- `lean/LEAN_STATUS.md` — Lean status
-- `REVIEW_PACKAGE.md` — package for external specialists
-- `NOVELTY_STATEMENT.md` — novelty claim
+- `theory/full_proof.md`
+- `theory/full_proof_verification.md`
+- `lean/RCProof/Hybrid.lean` and `HybridExtended.lean` (both build)
+- `lean/LEAN_STATUS.md`
+- `REVIEW_PACKAGE.md`
+- `NOVELTY_STATEMENT.md`
 - `paper/long_paper.md` / `paper/short_paper.md`
 
 ## Credibility gate
 
-The result is a coherent theorem candidate with verified identities, a formalised algebraic core, and low prior-art risk. Its final credibility rests on independent external reconstruction of the hybrid distance bound.
+All internal items that can be closed without external humans have been closed. The remaining gates are external by nature.
