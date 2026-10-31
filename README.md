@@ -2,6 +2,8 @@
 
 **Share this link:** https://github.com/Cruxy234/RC-Packing-Feasible-Note
 
+**Current status:** [`STATUS.md`](STATUS.md)
+
 Related upstream: [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
 
 ## Papers
@@ -13,6 +15,7 @@ Related upstream: [christophergardner-star/RC-Discovery](https://github.com/chri
 
 | File | Content |
 |------|---------|
+| `STATUS.md` | Current status summary |
 | `theory/PRIOR_ART_VETO_UPDATED.md` | Deeper literature search: no match for hybrid same-label theorem |
 | `theory/hybrid_stinespring_isometry.md` | Hybrid isometry construction and key identities |
 | `theory/PRIOR_ART_VETO.md` | Initial literature search |
