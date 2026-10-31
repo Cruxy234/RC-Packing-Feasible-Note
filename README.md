@@ -4,6 +4,8 @@
 
 **Final version:** [`paper/FINAL.md`](paper/FINAL.md)
 
+**Breakthrough readiness:** [`BREAKTHROUGH_READINESS.md`](BREAKTHROUGH_READINESS.md)
+
 **Canonical repository:** [christophergardner-star/RC-Discovery](https://github.com/christophergardner-star/RC-Discovery)
 
 **Current status:** [`STATUS.md`](STATUS.md)
@@ -11,6 +13,7 @@
 ## Papers
 
 - **[`paper/FINAL.md`](paper/FINAL.md)** — Clean final version (coefficient-two bound).
+- **[`paper/ARXIV_ABSTRACT.txt`](paper/ARXIV_ABSTRACT.txt)** — Ready-to-paste abstract.
 - **[`paper/long_paper.md`](paper/long_paper.md)** — Extended development.
 - **[`paper/short_paper.md`](paper/short_paper.md)** — Concise version.
 - **[`theory/full_proof.md`](theory/full_proof.md)** — Full proof write-up.
@@ -19,14 +22,13 @@
 
 | File | Content |
 |------|---------|
+| `BREAKTHROUGH_READINESS.md` | What is done, what remains external, submission checklist |
 | `STATUS.md` | Current precise status |
-| `theory/HARDER_PUSH_2.md` | Careful sharpness search (ratios 0.18–0.47) |
-| `theory/HARDER_PUSH.md` | Explicit probes and robustness constants |
-| `theory/CLOSING_PROOFS.md` | Analytic arguments for tractable problems |
-| `lean/RCProof/Hybrid.lean` | Formalised algebraic core (builds) |
-| `lean/RCProof/HybridExtended.lean` | Residual orthogonality (builds) |
+| `theory/HARDER_PUSH_2.md` | Careful sharpness search |
+| `theory/VERIFICATION_2026-10-31.md` | Latest verification |
 | `REVIEW_PACKAGE.md` | Package for external specialists |
 | `NOVELTY_STATEMENT.md` | Novelty claim and search scope |
+| `lean/RCProof/Hybrid.lean` | Formalised algebraic core |
 
 ## Headline
 
@@ -36,4 +38,4 @@ Under packing condition \(\alpha = \sigma_{\min}(T) > 0\), the same-label comple
 \qquad
 \gamma_F \ge \delta.
 \]
-The result is internally reconstructed, computationally audited, and partially formalised. Coefficient 2 is a safe majorant with observed slack. Novelty is unverified. Independent external reconstruction of the hybrid distance bound remains the credibility gate.
+The result is internally complete as a theorem candidate and ready for external scrutiny. A scientific breakthrough requires independent specialist reconstruction, peer review, and community recognition — steps that remain external.
