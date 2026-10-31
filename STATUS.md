@@ -26,8 +26,8 @@ Composition with Record-Margin Stability yields a fully dimension-free certifica
 - Prior-art search (no match found).
 - Lean algebraic + residual core (builds).
 - Uniform higher-rank statement.
-- Lipschitz robustness with explicit constants in terms of spectral gap.
-- Sharpness: lower-order obstruction proved; numerical ratios 0.18–0.40; optimal constant still open.
+- Lipschitz robustness with explicit constants.
+- Sharpness: careful search with valid POVMs yields ratios 0.18–0.47; coefficient 2 has clear slack. Optimal constant remains open but does not block the result.
 
 ## Remaining external gates
 
@@ -37,16 +37,17 @@ Composition with Record-Margin Stability yields a fully dimension-free certifica
 | Peer review | Not yet submitted |
 | Definitive novelty confirmation | Literature search complete; external confirmation pending |
 | Full end-to-end Lean formalisation | Algebraic core done; analytic estimates open |
-| Optimal constant in the distance bound | Concrete open problem; does not block dimension-free character |
+| Optimal constant | Concrete open problem; coefficient 2 is safe with slack |
 
 ## Primary documents
 
-- `paper/FINAL.md` — clean final version
-- `theory/HARDER_PUSH.md` — explicit probes and constants
+- `paper/FINAL.md`
+- `theory/HARDER_PUSH_2.md` — careful sharpness search
+- `theory/HARDER_PUSH.md`
 - `theory/CLOSING_PROOFS.md`
 - `theory/full_proof.md`
 - `lean/RCProof/Hybrid.lean` and `HybridExtended.lean`
 
 ## Credibility gate
 
-All internal items that can be closed with existing tools have been closed or reduced to concrete open problems. The remaining gates are external or are the optimal constant.
+Coefficient 2 is a safe majorant with observed slack. All internal items that can be closed with existing tools have been closed or reduced to concrete open problems. The remaining gates are external.
